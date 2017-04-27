@@ -155,7 +155,7 @@ function prevPage(){
 	);
 }
 
-//build output
+//build output in div
 function getOutput(item){
 	var videoId = item.id.videoId;
 	var title = item.snippet.title;
@@ -164,7 +164,7 @@ function getOutput(item){
 	var channelTitle = item.snippet.channelTitle;
 	var videoDate = item.snippet.publishedAt;
 	
-//build output string
+//build output string for div
 	var output = '<li>' +
 		'<div class="list-left">' +
 		'<img src="'+thumb+'">' +
@@ -182,7 +182,7 @@ function getOutput(item){
 	
 }
 
-//build the buttons
+//build the buttons for prev/next
 function getButtons(prevPageToken, nextPageToken){
 	if(!prevPageToken){
 		var btnoutput = '<div class ="button-container">' +
